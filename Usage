@@ -1,0 +1,16 @@
+# SwipeReplyController
+USAGE
+
+Under MainActivity where the Swipe Reply has to be implemented
+
+ SwipeReply swipeReplyController = new SwipeReply(getActivity(), position -> {
+ //GET YOUR ADAPTER ITEM ON WHICH THE SWIPE REPLY IS CALLED 
+   });
+
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(swipeReplyController);
+        itemTouchHelper.attachToRecyclerView(mRecyclview);
+        
+        
+        
+
+
