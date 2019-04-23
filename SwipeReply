@@ -19,7 +19,7 @@ import static android.support.v7.widget.helper.ItemTouchHelper.ACTION_STATE_IDLE
 import static android.support.v7.widget.helper.ItemTouchHelper.ACTION_STATE_SWIPE;
 import static android.support.v7.widget.helper.ItemTouchHelper.RIGHT;
 
-public class MessageSwipeControllerExt extends ItemTouchHelper.Callback {
+public class SwipeReply extends ItemTouchHelper.Callback {
 
     private Drawable imageDrawable;
     private Drawable shareRound;
@@ -36,7 +36,7 @@ public class MessageSwipeControllerExt extends ItemTouchHelper.Callback {
     private final SwipeControllerActions swipeControllerActions;
 
 
-    public MessageSwipeControllerExt(@NotNull Context context, @NotNull SwipeControllerActions swipeControllerActions) {
+    public SwipeReply(@NotNull Context context, @NotNull SwipeControllerActions swipeControllerActions) {
         super();
         this.context = context;
         this.swipeControllerActions = swipeControllerActions;
